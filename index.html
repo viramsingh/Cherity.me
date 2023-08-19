@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Cherity</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/04db810459.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="v1.png" alt="Donation Charity Logo">
+            </a>
+        </div>
+        <ul class="nav-links nav-menu">
+            <li class="nav-item"><a href="index.html">HOME</a></li>
+            <li class="nav-item"><a href="#aboutid">ABOUT US</a></li>
+            <li class="nav-item"><a href="#contactid">CONTACT</a></li>
+            <a class="donate-button" href="#donate"  class="nav-item">Make a Donate</a>
+          </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+</header>
+
+
+
+      
+      <!-- home -->
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Welcome to Donation Charity</h1>
+        <p>Help us make a difference in the world.</p>
+        <a href="#donate" class="btn">Donate Now</a>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <div class="feature-item">
+          <i class="fas fa-hands-helping"></i>
+          <h3>Make an Impact</h3>
+          <p>Your donations help us support those in need and make a positive impact in their lives.</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-heart"></i>
+          <h3>Spread Love</h3>
+          <p>Through your contributions, we can spread love and compassion to those who need it the most.</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-globe"></i>
+          <h3>Global Reach</h3>
+          <p>Our charity efforts extend across borders, making a difference in communities worldwide.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- about -->
+  <!-- <main> -->
+  <div class="container" id="aboutid">
+    <h1>About Us</h1>
+    <p>Welcome to Donation Charity, a non-profit organization dedicated to making a positive impact in the lives of those in need. We believe in the power of compassion and generosity to create a better world.</p>
+    <p>Our mission is to provide support and resources to individuals and communities facing challenging circumstances. Through our various programs and initiatives, we strive to address critical issues such as poverty, hunger, education, healthcare, and environmental sustainability.</p>
+    <p>At Donation Charity, we are driven by a strong commitment to social responsibility. We work tirelessly to identify and partner with reputable organizations and projects that align with our values and have a meaningful impact. Through strategic collaborations, we maximize the effectiveness of our efforts and ensure that every donation reaches those who need it the most.</p>
+    <p>We believe that everyone has the power to make a difference, no matter how big or small. Whether you choose to donate, volunteer, or spread awareness, your involvement can create ripple effects of change. Together, we can create a more compassionate and equitable world.</p>
+    <p>Join us in our mission to transform lives and inspire hope. Together, we can make a difference.</p>
+  </div>
+  <!-- </main> -->
+
+<!-- donation from -->
+<main>
+    <div class="container" id="donate">
+      <h1>Make a Donation</h1>
+      <p>Thank you for considering a donation to support our cause. Your contribution will make a difference in the lives of those in need.</p>
+
+      <div class="donation-form">
+        <form action="submit_donation.php" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="donation-amount">Donation Amount:</label>
+          <input type="number" id="donation-amount" name="donation-amount" required>
+          <input type="submit" value="Donate">
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- contact -->
+  <main>
+    <div class="container" id="contactid">
+      <h1>Contact Us</h1>
+      <p>Get in touch with us for any inquiries or feedback. We'd love to hear from you!</p>
+
+      <div class="contact-form">
+        <form action="submit_contact.php" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+
+      <div class="social-media">
+        <h2>Connect with Us</h2>
+        <ul>
+          <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+<!-- footer -->
+<footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3 class="footer-heading">About Us</h3>
+        <p>Welcome to Cheriti Life, a non-profit organization dedicated to improving lives and creating positive change in the world. We strive to make a difference by providing support, resources, and opportunities to those in need.</p>
+      </div>
+      <div class="footer-column">
+        <h3 class="footer-heading">Contact Us</h3>
+        <p>Email: info@qualitywebs.in</p>
+        <p>Phone: 0731-7177541</p>
+        <p>Address: Vijaynagar, Indore 452010</p>
+      </div>
+      <div class="footer-column">
+        <h3 class="footer-heading">Follow Us</h3>
+        <div class="social-media-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Cheriti Life. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  
+<script>
+  //Hamburger Javascript
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+
+})
+
+document.querySelectorAll(".nav-link").forEach(n => {
+  n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+  })
+})
+
+window.onscroll = function (e) {
+  // called when the window is scrolled.  
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+} 
+  </script>
+</body>
+</html>
+
+</body>
+</html>

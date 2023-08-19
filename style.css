@@ -1,0 +1,432 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* header */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+
+.nav-links li {
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #ddd;
+}
+
+
+nav .hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+nav .hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.6s ease-in-out;
+    background-color: #fff;
+
+}
+
+
+/* Add your existing media queries and other styles here */
+
+@media screen and (max-width: 768px) {
+    .navbar{
+        justify-content: space-between;
+    }
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.open {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    nav .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav .hamburger.active :nth-child(2) {
+        opacity: 0;
+    }
+
+    nav .hamburger.active :nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    nav .hamburger.active :nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    nav .nav-menu {
+        position: fixed;
+        left: -200%;
+        top: 10vh;
+        gap: 0;
+        flex-direction: column;
+         background-color: #333;
+        text-align: center;
+        transition: 0.6s;
+        width: 100vw;
+        border-bottom: #e64800 solid 3px;
+    }
+
+    nav .nav-item {
+        margin: 16px 0;
+    }
+
+    nav .nav-menu.active {
+        left: 0;
+    }
+}
+
+
+
+/* CSS for the Donate button */
+.donate-button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.donate-button:hover {
+    background-color: #45a049;
+}
+
+/* CSS for the hero section */
+.hero {
+    background-image: url('bgimg1.jpg');
+    background-size: cover;
+    background-position: center;
+    /* color: #fff; */
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* CSS for the features section */
+.features {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+}
+
+.features .container {
+    display: flex;
+    justify-content: center;
+}
+
+.feature-item {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.feature-item i {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.feature-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.feature-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* about us  */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+/* donation page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #666666;
+    margin-bottom: 40px;
+}
+
+.donation-form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* contact us /
+    / CSS for the contact form */
+.contact-form {
+    margin-top: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="number"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* CSS for social media links */
+.social-media {
+    margin-top: 40px;
+}
+
+.social-media h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.social-media li {
+    margin-right: 10px;
+}
+
+.social-media a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.social-media a:hover {
+    background-color: #666;
+}
+
+/* CSS for the footer section */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+}
+
+.footer-heading {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-column p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.social-media-icons a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.social-media-icons a:hover {
+    background-color: #666;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 625px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}
